@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 function App() {
   return (
     <Routes>
-    <Route path="/" element={<Home/>}/>
+    <Route path="/" element={<Cadastro/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/cadastro" element={<Cadastro/>}/>
 
