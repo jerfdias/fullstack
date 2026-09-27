@@ -1,5 +1,5 @@
 
-import "./estilos/Home.css"
+import "./estilos/Home.css";
 
 
 function Home() {
