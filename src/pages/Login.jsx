@@ -15,7 +15,7 @@ const[mensagem,setMensagem]=useState("");
 async function LoginUsuario(e) {
     e.preventDefault();
 
-  const resposta= await fetch("http://localhost:3000/login",{
+  const resposta= await fetch("https://full-stack-deploy-kwms.onrender.com/usuarios",{
     method:"POST",
     headers:{
         "Content-Type": "application/json"

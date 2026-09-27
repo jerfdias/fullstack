@@ -14,7 +14,7 @@ function Cadastro() {
     async function EnviarFormulario(e) {
         e.preventDefault();
 
-        const resposta = await fetch("http://localhost:3000/usuarios", {
+        const resposta = await fetch("https://full-stack-deploy-kwms.onrender.com/usuarios", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
