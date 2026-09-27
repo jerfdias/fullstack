@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENU LATERAL */
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #172033;
+    color: white;
+    padding: 25px 15px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #2879e8;
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+    flex: 1;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+/* TOPO */
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.topo input {
+    width: 100%;
+    max-width: 650px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+}
+
+/* BOAS VINDAS */
+
+.boasVindas {
+    margin-bottom: 30px;
+}
+
+.boasVindas h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #172033;
+}
+
+.boasVindas p {
+    color: #687386;
+    font-size: 18px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #687386;
+    font-size: 16px;
+}
+
+.card strong {
+    display: block;
+    font-size: 35px;
+    color: #172033;
+    margin-top: 15px;
+}
+
+/* USUÁRIOS */
+
+.usuarios {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tituloUsuarios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tituloUsuarios h2 {
+    margin: 0;
+    color: #172033;
+}
+
+.tituloUsuarios button {
+    background: #2879e8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tituloUsuarios button:hover {
+    background: #1765d1;
+}
+
+/* TABELA */
+
+.tabelaContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+thead {
+    background: #f4f6f9;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e6e8ec;
+}
+
+th {
+    color: #455064;
+}
+
+td {
+    color: #687386;
+}
+
+/* BOTÕES DA TABELA */
+
+td button {
+    border: none;
+    padding: 8px 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .sidebar h2 {
+        margin: 10px 0 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sidebar a {
+        white-space: nowrap;
+    }
+
+    .conteudo {
+        padding: 20px 15px;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topo input {
+        max-width: none;
+    }
+
+    .boasVindas h1 {
+        font-size: 28px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .tituloUsuarios {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tituloUsuarios button {
+        width: 100%;
+    }
+
+}
