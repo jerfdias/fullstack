@@ -31,7 +31,7 @@ async function LoginUsuario(e) {
     setEmail("");
         setSenha("");
         setTimeout(()=>{
-            navigate("/")
+            navigate("/home")
         }, 2000);
     
   }else{
